@@ -1,0 +1,20 @@
+#!/bin/bash
+
+source build/common
+
+export ADAL_TRAVIS_BUILD_TASK="Analyse_iOS_Static_Lib"
+
+echo "===============================[Analyse iOS Static Library]=============================="
+
+# Output the Build Parameters for OCLint
+xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS | tee xcodebuild.log
+
+# Read the Build Parameters for OCLint
+oclint-xcodebuild xcodebuild.log
+
+#Analyse
+oclint-json-compilation-database
+
+RETVAL=$?
+
+exit $RETVAL
