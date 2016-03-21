@@ -36,7 +36,7 @@ script:
 #  - build/Mac_32_bit
 
 # Analyse the ADALiOS library
-  Analyze_iOS_Static_Lib
+  - build/Analyze_iOS_Static_Lib
 
 after_success:
 # Run slather once to have it print out the results in the travis log
