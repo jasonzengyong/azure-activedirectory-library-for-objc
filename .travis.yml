@@ -29,7 +29,7 @@ script:
   - build/Mac_Test_App
 
 # Test ADAL for Mac 32-bit
-  - build/Mac_32_bit
+#  - build/Mac_32_bit
 
 after_success:
 # Run slather once to have it print out the results in the travis log
