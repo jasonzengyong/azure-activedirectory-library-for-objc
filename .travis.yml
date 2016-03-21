@@ -31,7 +31,7 @@ script:
 #  - build/Mac_Framework
   
 # Build Mac Test App
-#  - build/Mac_Test_App
+  - build/Mac_Test_App
 
 # Test ADAL for Mac 32-bit
 #  - build/Mac_32_bit
