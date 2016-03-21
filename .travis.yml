@@ -18,7 +18,7 @@ before_script:
   - brew cask uninstall oclint
   - brew tap oclint/formulae
   - brew install oclint
-  - brew install infer
+  - brew install homebrew/science/infernal
 
 script:  
 # Build and Test the ADALiOS library
