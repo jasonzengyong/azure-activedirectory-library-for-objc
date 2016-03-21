@@ -10,10 +10,10 @@ echo "===============================[Analyse iOS Static Library]===============
 xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS | tee xcodebuild.log
 
 # Read the Build Parameters for OCLint
-oclint-xcodebuild xcodebuild.log
+#oclint-xcodebuild xcodebuild.log
 
 #Analyse
-oclint-json-compilation-database
+#oclint-json-compilation-database
 
 RETVAL=$?
 
