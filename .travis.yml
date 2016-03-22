@@ -15,11 +15,12 @@ before_script:
 # build when the xcodebuild command fails
   - set -o pipefail
   
-  - brew cask uninstall oclint
-  - brew tap oclint/formulae
-  - brew install oclint
-  - brew update
-  - brew install infer
+  #- brew cask uninstall oclint
+  #- brew tap oclint/formulae
+  #- brew install oclint
+  #- brew update
+  #- brew install infer
+  #- brew install oclint
 
 script:  
 # Build and Test the ADALiOS library
@@ -32,10 +33,10 @@ script:
 #  - build/Mac_Framework
   
 # Build Mac Test App
-  - build/Mac_Test_App
+#  - build/Mac_Test_App
 
 # Test ADAL for Mac 32-bit
-#  - build/Mac_32_bit
+  - build/Mac_32_bit
 
 # Analyse the ADALiOS library
 #  - build/Analyze_iOS_Static_Lib
