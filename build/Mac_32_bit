@@ -7,7 +7,7 @@ export ADAL_TRAVIS_BUILD_TASK="Mac_32bit_Framework"
 echo "==========================[Building Mac OS X Framework (32-bit)]=========================="
 
 # Output the Build Parameters for OCLint
-xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS | tee xcodebuild.log
+xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS > xcodebuild.log
 
 # Read the Build Parameters for OCLint
 oclint-xcodebuild xcodebuild.log | xcpretty
