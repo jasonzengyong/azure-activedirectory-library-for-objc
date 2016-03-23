@@ -15,7 +15,7 @@ before_script:
 # build when the xcodebuild command fails
   - set -o pipefail
   
-  - brew cask uninstall oclint
+  #- brew cask uninstall oclint
   - brew tap oclint/formulae
   - brew install oclint
   #- brew update
