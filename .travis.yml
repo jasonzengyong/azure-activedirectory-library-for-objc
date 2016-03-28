@@ -37,7 +37,7 @@ script:
 #  - build/Mac_Test_App
 
 # Test ADAL for Mac 32-bit
-#  - build/Mac_32_bit
+  - build/Mac_32_bit
 
 # Analyse the ADALiOS library
 #  - build/Analyze_iOS_Static_Lib
