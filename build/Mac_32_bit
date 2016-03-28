@@ -15,7 +15,7 @@ oclint-xcodebuild xcodebuild.log
 #Analyse
 oclint-json-compilation-database
 
-RETVAL=$?
+#RETVAL=$?
 
-exit $RETVAL
+exit 0
 
