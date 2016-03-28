@@ -14,6 +14,7 @@ before_script:
 # Tell the shell to echo failure codes up the pipe so that Travis will properly fail the
 # build when the xcodebuild command fails
   - set -o pipefail
+  - brew update
   #- brew upgrade oclint
   #- brew cask uninstall oclint
   #- brew tap oclint/formulae
