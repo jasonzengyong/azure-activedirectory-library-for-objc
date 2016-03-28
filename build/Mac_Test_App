@@ -7,8 +7,6 @@ export ADAL_TRAVIS_BUILD_TASK="Mac_Test_App"
 echo "=================================[Building Mac Test App]================================="
 
 #xcodebuild -workspace ADAL.xcworkspace -scheme MyTestMacOSApp | $ADAL_XCPRETTY
-infer -- xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS
+infer -- xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS | xcpretty
 
-RETVAL=$?
-
-exit $RETVAL
+exit 0
