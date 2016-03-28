@@ -10,10 +10,10 @@ echo "==========================[Building Mac OS X Framework (32-bit)]==========
 xcodebuild -target ADALiOS -configuration Debug -scheme ADALiOS > xcodebuild.log
 
 # Read the Build Parameters for OCLint
-oclint-xcodebuild xcodebuild.log | xcpretty
+oclint-xcodebuild xcodebuild.log
 
 #Analyse
-oclint-json-compilation-database | xcpretty
+oclint-json-compilation-database
 
 RETVAL=$?
 
