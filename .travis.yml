@@ -19,8 +19,8 @@ before_script:
   - brew cask uninstall oclint
   - brew tap oclint/formulae
   - brew install oclint
-  #- brew update
-  #- brew install infer
+  - brew update
+  - brew install infer
   #- brew install oclint
 
 script:  
@@ -34,10 +34,10 @@ script:
 #  - build/Mac_Framework
   
 # Build Mac Test App
-#  - build/Mac_Test_App
+  - build/Mac_32_bit
 
 # Test ADAL for Mac 32-bit
-  - build/Mac_32_bit
+  - build/Mac_Test_App
 
 # Analyse the ADALiOS library
 #  - build/Analyze_iOS_Static_Lib
